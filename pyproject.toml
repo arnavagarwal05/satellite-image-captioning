@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rscap"
+version = "0.1.0"
+description = "Image captioning for remote-sensing imagery (RSICD)"
+requires-python = ">=3.9"
+dependencies = ["torch>=2.0", "torchvision>=0.15", "pandas", "numpy", "pillow", "nltk", "tqdm", "matplotlib"]
+
+[project.optional-dependencies]
+data = ["datasets"]
+gradcam = ["grad-cam", "opencv-python"]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["rscap*"]

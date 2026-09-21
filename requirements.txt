@@ -1,0 +1,12 @@
+torch>=2.0
+torchvision>=0.15
+pandas
+numpy
+pillow
+nltk
+tqdm
+matplotlib
+datasets          # scripts/prepare_data.py only
+grad-cam          # scripts/gradcam.py only
+opencv-python     # required by grad-cam
+pytest            # tests only
